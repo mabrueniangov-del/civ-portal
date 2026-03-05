@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Citizen Profile</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="checkLogin(); loadProfile();">
+
+<header>
+<h1>Citizen Profile</h1>
+</header>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="profile.html">Profile</a>
+<a href="announcements.html">Announcements</a>
+<a href="registry.html">Citizen Registry</a>
+
+<button onclick="logout()">Logout</button>
+
+</nav>
+
+<div class="container">
+
+<div class="card">
+
+<p>Name: <span id="citizenName"></span></p>
+<p>Status: Active</p>
+<p>Citizenship ID: MB-001</p>
+
+</div>
+
+</div>
+<script>
+
+document.getElementById("citizenName").innerText =
+localStorage.getItem("currentUser")
+
+</script>
+<script src="script.js"></script>
+
+</body>
+</html>

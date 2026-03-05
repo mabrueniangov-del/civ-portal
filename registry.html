@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Citizen Registry</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="checkLogin(); loadRegistry();">
+
+<header>
+<h1>Citizen Registry</h1>
+</header>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="profile.html">Profile</a>
+<a href="voting.html">Voting</a>
+<a href="announcements.html">Announcements</a>
+<a href="registry.html">Citizen Registry</a>
+
+<button onclick="logout()">Logout</button>
+
+</nav>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Registered Citizens</h2>
+
+<ul id="citizenList"></ul>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
